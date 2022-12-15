@@ -16,7 +16,16 @@ const Prac = () => {
   };
   const bae = playerMaker('nico');
 
-  return <div>{nico.age}</div>;
+  const names: readonly string[] = ['1', '2'];
+
+  const players: [string, number, boolean] = ['nico', 1, true];
+
+  return (
+    <div>
+      {nico.age}
+      <div>{players}</div>
+    </div>
+  );
 };
 
 export default Prac;
